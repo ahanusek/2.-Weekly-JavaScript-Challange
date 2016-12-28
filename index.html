@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+  body {
+    background: url('tlo.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-y: hidden;
+    }
+
+  .wrapper {
+    width: 960px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  input {
+    margin: 0px 20px;
+    padding: 5px;
+
+    font-size: 18px;
+  }
+
+  input[type="text"] {
+  font-weight: bold;
+  width: 200px;
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+      <input type="text" id="option1" placeholder="Wpisz liczbę">
+      <select name="unit1" id="select1">
+        <option value="metr">metr</option>
+        <option value="km">kilometr</option>
+        <option value="dm">decymetr</option>
+        <option value="cm">centymetr</option>
+        <option value="mm">milimetr</option>
+        <option value="cal">cal</option>
+        <option value="feet">stopa</option>
+        <option value="yard">jard</option>
+        <option value="mile">mila</option>
+      </select>
+
+      <input type="text" id="option2" value="Wynik" disabled="">
+      <select name="unit2" id="select2">
+        <option value="metr">metr</option>
+        <option value="km">kilometr</option>
+        <option value="dm">decymetr</option>
+        <option value="cm">centymetr</option>
+        <option value="mm">milimetr</option>
+        <option value="cal">cal</option>
+        <option value="feet">stopa</option>
+        <option value="yard">jard</option>
+        <option value="mile">mila</option>
+      </select>
+  </div>
+
+<script type="text/javascript" src="app.js">
+</script>
+</body>
+</html>
